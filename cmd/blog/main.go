@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/DryundeL/blog-graphql/internal/config"
 	"github.com/DryundeL/blog-graphql/internal/db"
-	"github.com/DryundeL/blog-graphql/internal/graph/resolver"
+	"github.com/DryundeL/blog-graphql/internal/graphql/resolver"
 	"github.com/DryundeL/blog-graphql/internal/repository"
 	"github.com/DryundeL/blog-graphql/internal/service"
 )
