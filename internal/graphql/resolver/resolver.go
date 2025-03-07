@@ -22,5 +22,16 @@ func (r *Resolver) Query() generated.QueryResolver {
 	return &queryResolver{r}
 }
 
+func (r *Resolver) Post() generated.PostResolver {
+	return &postResolver{r}
+}
+
+func (r *Resolver) User() generated.UserResolver {
+	return &userResolver{r}
+}
+
+// Вспомогательные структуры для реализации интерфейсов
 type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
+type postResolver struct{ *Resolver }
+type userResolver struct{ *Resolver }
