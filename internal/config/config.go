@@ -15,7 +15,7 @@ func LoadConfig() *Config {
 	_ = godotenv.Load()
 	return &Config{
 		Port:      getEnv("PORT", "8080"),
-		DBConn:    getEnv("DB_CONN", "postgres://postgres:secret@localhost:5432/blog?sslmode=disable"),
+		DBConn:    getEnv("DB_CONN", "postgres://postgres:root@localhost:5433/blog?sslmode=disable"),
 		JWTSecret: getEnv("JWT_SECRET", "mysecretkey"),
 	}
 }
